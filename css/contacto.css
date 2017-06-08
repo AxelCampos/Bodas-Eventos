@@ -148,7 +148,7 @@ div.izquierda{float: left;width: 70%; margin-top: 5%;height: 400px;max-width: 10
 div.formulario{width: 20%;border-top: 2px solid red; margin-left: 70%; padding: 30px;position: absolute;top:480px;background-color: white}
 h2.formu{text-align: center;}
 p.formu{text-align: center;font-size: 120%}
-li.titulo{color: red;font-size: 30px}
+li.titulo{color: red;font-size: 30px;font-family:Allura;}
 ul{list-style-type: none;float: left;margin-right: 5%;width:45%}
 iframe{width: 45%px;height: 300px;max-width: 100%;}
 iframe:hover{
