@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="galeria.xsl"?>
+<galeria>
+<finca ruta="1.jpg"/>
+<finca ruta="2.jpg"/>
+<finca ruta="3.jpg"/>
+<finca ruta="4.jpg"/>
+<restaurante ruta="5.jpg"/>
+<restaurante ruta="6.jpg"/>
+</galeria>

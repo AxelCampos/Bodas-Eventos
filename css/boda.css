@@ -1,0 +1,175 @@
+
+
+@font-face
+{
+   font-family: "GreatVibes";
+   src: url("../fuentes/GreatVibes-Regular.eot");
+   src: url("../fuentes/GreatVibes-Regular.eot") format("embedded-opentype"),
+        url("../fuentes/GreatVibes-Regular.woff") format("woff"),
+        url("../fuentes/GreatVibes-Regular.ttf") format("truetype"),
+        url("../fuentes/GreatVibes-Regular.svg#IDdelafuente") format("svg");
+}
+@font-face
+{
+   font-family: "Lobster";
+   src: url("../fuentes/Lobster-Regular.eot");
+   src: url("../fuentes/Lobster-Regular.eot") format("embedded-opentype"),
+        url("../fuentes/Lobster-Regular.woff") format("woff"),
+        url("../fuentes/Lobster-Regular.ttf") format("truetype"),
+        url("../fuentes/Lobster-Regular.svg#IDdelafuente") format("svg");
+}
+@font-face
+{
+   font-family: "Amatic";
+   src: url("../fuentes/AmaticSC-Bold.eot");
+   src: url("../fuentes/AmaticSC-Bold.eot") format("embedded-opentype"),
+        url("../fuentes/AmaticSC-Bold.woff") format("woff"),
+        url("../fuentes/AmaticSC-Bold.ttf") format("truetype"),
+        url("../fuentes/AmaticSC-Bold.svg#IDdelafuente") format("svg");
+
+}
+@font-face
+{
+   font-family: "SigmarOne";
+   src: url("../fuentes/SigmarOne-Regular.eot");
+   src: url("../fuentes/SigmarOne-Regular.eot") format("embedded-opentype"),
+        url("../fuentes/SigmarOne-Regular.woff") format("woff"),
+        url("../fuentes/SigmarOne-Regular.ttf") format("truetype"),
+        url("../fuentes/SigmarOne-Regular.svg#IDdelafuente") format("svg");
+}
+@font-face
+{
+   font-family: "Allura";
+   src: url("../fuentes/Allura-Regular.eot");
+   src: url("../fuentes/Allura-Regular.eot") format("embedded-opentype"),
+        url("../fuentes/Allura-Regular.woff") format("woff"),
+        url("../fuentes/Allura-Regular.ttf") format("truetype"),
+        url("../fuentes/Allura-Regular.svg#IDdelafuente") format("svg");
+}
+
+body{margin: 0;padding: 0}
+
+
+div.posiciones{float: left;position: relative;width:5em;height:5em;margin-left: 5%;}
+div.posiciones img{width: 100%; height: 100%}
+div.copa1{width:35%; height:40%;position: absolute;top: 50px;left: 20px;
+    animation-name: copaUno;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+  @keyframes copaUno { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(25deg); 
+        }
+    }
+div.copa1 img{width: 90%;height: 90%}
+div.copa2{width:35%; height:40%;position: absolute;top: 50px;left: 38px;
+    animation-name: copaDos;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+  @keyframes copaDos { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(-25deg); 
+        }
+    }
+div.copa2 img{width: 90%; height: 90%;}
+
+
+
+.parallax{background-image: url(../imagenes_index/flores.jpg);
+			    min-height:500px;
+          background-attachment:fixed;
+		      background-position:center;
+			    background-repeat: no-repeat;
+			    background-size:cover;}
+h1.frase{font-family: GreatVibes; text-align: center; color: #F5BCA9; font-size: 90px;text-shadow: 2px 2px black; margin:10% 30% 0 30%}
+h1.frase2{font-family: Allura; text-align: center;margin: 5% 15%;font-size: 50px}
+h1.frase3{font-family: Allura; text-align: center;margin: 5% 15%;}
+h2.frase2{font-family: Allura; text-align: center;font-weight: normal;padding-top: 5%;color: white}
+
+
+
+.menudes {
+position: relative;
+overflow: hidden;
+width: 80%;
+height: 45px;
+margin: 10px auto 10px;
+border-radius: 8px;
+background-color: rgba(0,0,0,0.3);
+text-align:center;
+}
+.menudes a {
+font-family:SigmarOne; 
+width: 25%; /* 100% dividido por el número de elementos del menú */
+margin:0 3%;
+padding: 20px 10px;
+color: #fff;
+text-decoration: none;
+}
+.marca {
+position: absolute;
+bottom: 4px;
+left: -12.5%; /* Al menos 1/2 del ancho de cada enlace */
+width: 12.5%; /* 1/2 del ancho de cada enlace */
+height: 4px;
+background: #fff;
+transition: 0.5s ease-in-out;
+}
+.menudes a:nth-child(1):hover ~ .marca {
+left: 5.30%; /* 1/4 Ancho del enlace */
+}
+.menudes a:nth-child(2):hover ~ .marca {
+left: 23.25%; /* 1/4 Ancho del enlace + 1 vez ancho enlace */
+}
+.menudes a:nth-child(3):hover ~ .marca {
+left: 42.25%; /* 1/4 Ancho del enlace + 2 veces ancho enlace */
+}
+.menudes a:nth-child(4):hover ~ .marca {
+left: 60.5%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
+}
+.menudes a:nth-child(5):hover ~ .marca {
+left: 79.25%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
+}
+
+
+
+.principal{background-image: url(../imagenes_index/blanco.jpg);background-size: cover;width: 100%;height: 600px;margin: 0}
+p.otros{text-align: center;margin:0 10%; font-family: Lobster;font-size: 20px;float: left;}
+p.primero{text-align:center;margin-top: 5%;margin-bottom: 2%;font-family: Lobster;font-size: 20px;}
+div.izquierda{float: left;margin-left: 5%;width: 50%; margin-top: 5%}
+
+div.formulario{width: 20%;border-top: 2px solid red; margin-left: 70%; padding: 30px;position: absolute;top:480px;background-color: white}
+h2.formu{text-align: center;}
+p.formu{text-align: center;font-size: 120%}
+
+.segundo{width: 100%; height: 1200px; background-color: white;margin: 0;}
+iframe{margin:0 10% ;width: 80%; height: 900px; border-radius:10%;border: none;}
+
+
+
+.boda{width: 100%; height:700px; background-image: url(../imagenes_index/finca.jpg);background-size: cover;background-color: rgba(172, 13, 41, 0.6);}
+.color{width: 100%;height: 700px;background-color: rgba(172, 13, 41, 0.8)}
+form{text-align: center}
+input{height: 30px; margin-right: 5%;color: grey}
+input.enviar{margin-top: 5%;margin-bottom: 5%;color: white}
+div.color form input{background-color: rgba(172, 13, 41, 0.8);border: none}
+hr{size: 0.5px; align-content: center;width: 70%}
+h3{font-family: Allura; margin-left: 2.5%;font-size:30px; margin-bottom: 0;color: white}
+ol{float: left;list-style-type: none;font-family: Lobster; margin-top: 0;color: white;margin-right: 29% }
+p.redes{margin-left: 85%; color: white; font-family: Lobster;font-size: 20px ;margin-top: -2%}
+img.facebook{width: 2em;height: 2em;float:left; margin-left: 85%;margin-top: -7%;}
+img.twitter{width: 2em;height: 2em;margin-top: -7%;margin-left: 87%;float: left}
+
+
+
